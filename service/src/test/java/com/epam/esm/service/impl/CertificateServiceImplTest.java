@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CertificateServiceImplTest {
 
     @Test
-    void findById() {
+    void exampleTest() {
         assertEquals(1,1);
     }
 }
