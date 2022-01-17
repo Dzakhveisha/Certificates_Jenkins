@@ -17,16 +17,17 @@ import javax.sql.DataSource;
 @EnableJpaAuditing
 @ComponentScan("com.epam.esm")
 public class DBConfig {
-
-    @Value("#{environment.DB_PASSWORD}")
+    //@Value("#{environment.DB_PASSWORD}")
+    @Value("mysqlPassword")
     private String dbPassword;
 
-    @Value("#{environment.DB_USER_NAME}")
+    //@Value("#{environment.DB_USER_NAME}")
+    @Value("root")
     private String dbUserName;
 
 
     @Bean
-    @Profile("prod")
+    @Profile({"prod","default"})
     public HikariDataSource hikariDataSource() {
         HikariConfig config = new HikariConfig();
         config.setUsername(dbUserName);
