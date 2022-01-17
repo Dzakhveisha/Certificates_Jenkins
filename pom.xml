@@ -20,6 +20,13 @@
         <junit.version>5.8.1</junit.version>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <spring.boot.mainclass>com.epam.esm.controller.app.Application</spring.boot.mainclass>
+
+
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <jacoco.version>0.8.6</jacoco.version>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>D:/epam_java_lab/localStore/target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.language>java</sonar.language>
     </properties>
 
     <build>
@@ -29,6 +36,27 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>3.9.1.2184</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>${jacoco.version}</version>
+                    <executions>
+                        <execution>
+                            <id>jacoco-initialize</id>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>jacoco-site</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
