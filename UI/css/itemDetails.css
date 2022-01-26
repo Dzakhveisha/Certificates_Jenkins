@@ -1,0 +1,39 @@
+#certificateImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#certificateImg {
+    width: 800px;
+    min-width: 250px;
+    height: 350px;
+    background-color: #d9d9d9;
+    flex-shrink:5;
+}
+
+#textInfo {
+    background-color: white;
+    min-width: 300px;
+    min-height: 350px;
+}
+#textInfo p {
+    max-width: 250px;
+    font-size: medium;
+}
+.company{
+    font-weight: lighter;
+}
+.description{
+    max-width: 800px;
+}
+.labelTime{
+    font-weight: lighter;
+    font-size: small;
+}
+.price{
+    font-weight: bolder;
+}
+#info, .description{
+    margin-left: 10%;
+}

@@ -1,0 +1,57 @@
+.certificates{
+    width: 100%;
+}
+
+.certificate{
+    background-color: white;
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 315px;
+}
+
+.certificateImg{
+    width: 200px;
+    height: 200px;
+    background-color: #d9d9d9;
+}
+.certificateImg img, .tagImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name{
+    font-size: large;
+}
+
+.duration{
+    font-size: small;
+    display: block;
+    text-align: end;
+    font-weight: lighter;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.company {
+    font-size: small;
+    font-weight: normal;
+}
+
+#categories{
+    background-color: #d9d9d9;
+    min-width: 100%;
+}
+.tagImg{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+}
+.category h4{
+    font-size: small;
+}
+.total{
+    text-align: right;
+}

@@ -1,0 +1,36 @@
+.material-icons.orange600 { color: #FB8C00; }
+.material-icons.md-48 { font-size: 120px; max-font-size: 120px; min-font-size: 120px }
+.material-icons.md-16 { font-size: 16px; max-font-size: 16px; min-font-size: 16px }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #353535;
+    background-color: #eaeaea;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #353535;
+}
+a:active, a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+select option:checked, select option:hover {
+    background-color: #eaeaea !important;
+}
+
+header form ::placeholder {
+    font-size: 0.9em;
+}
+label{
+    font-size: small;
+}

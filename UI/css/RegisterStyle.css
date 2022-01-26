@@ -1,0 +1,40 @@
+.formContainer{
+    position: relative;
+}
+
+#registerForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    width:60%;
+    min-width: 300px;
+    background-color: white;
+}
+
+#registerTitle{
+    background-color: #cdcdcd;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    font-size: x-large;
+}
+
+#registerSubmit{
+    background-color: #6cd087;
+}
+
+#registerForm label a{
+    text-align: center;
+}
+
+#registerForm label a span{
+    border-radius: 100%;
+    padding: 10%;
+    border: solid  #cdcdcd;
+    background-color: #cdcdcd;
+
+}
+#registerSubmit{
+    background-color: #6cd087;
+}

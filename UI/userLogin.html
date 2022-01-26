@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/loginStyle.css" rel="stylesheet">
+
+    <title>User Login</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class=" container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarMenu">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-icons orange600">card_giftcard</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="pageSearch" class="form-control me-2" type="search" placeholder="Search by name"
+                           aria-label="Search">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>All Categories</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </form>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-icons">favorite</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="formContainer container">
+        <form id="loginForm" class=" row justify-content-center align-items-cent">
+           <label>
+               <a href="#" class="nav-link"  >
+                   <span class="material-icons orange600  md-48">card_giftcard</span>
+               </a>
+           </label>
+            <input id="loginInput" class="form-control form-control-lg mx-auto mb-2 mt-3" type="text" placeholder="Login">
+            <input id="PasswordInput" class="form-control form-control-lg mx-auto mb-2" type="password"
+                   placeholder="Password">
+            <input id="loginSubmit" class="form-control form-control-lg mx-auto mb-2" type="submit" value="Submit">
+        </form>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+</html>
