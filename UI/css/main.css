@@ -1,6 +1,8 @@
 .material-icons.orange600 { color: #FB8C00; }
-.material-icons.md-48 { font-size: 120px; max-font-size: 120px; min-font-size: 120px }
+.material-icons.md-120 { font-size: 120px; max-font-size: 120px; min-font-size: 120px }
 .material-icons.md-16 { font-size: 16px; max-font-size: 16px; min-font-size: 16px }
+.material-icons.md-48 { font-size: 48px; max-font-size: 48px; min-font-size: 48px }
+
 
 
 html, body {
