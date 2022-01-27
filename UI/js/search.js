@@ -16,10 +16,7 @@ while (tagsPageSelect !== null) {
 }
 
 // search when select was changed
-selectTags.onchange = function (){
-    let event = new Event("submit");
-    searchElement.dispatchEvent(event);
-}
+selectTags.onchange = searchByTagAndText
 
 const allTagsValue = document.getElementById("allTags").value
 

@@ -49,7 +49,7 @@ buttonBefore.addEventListener("click", (e) => {
             <div class="tagImg">
                 <img src="img/universalTag.png">
             </div>
-            <h4> ${tagsPage.page[i].name}</h4>
+            <h4 class="tagName">${tagsPage.page[i].name}</h4>
         </div>`
         }
     }
