@@ -17,7 +17,6 @@ import javax.validation.constraints.Min;
 import java.util.Set;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/certificates")

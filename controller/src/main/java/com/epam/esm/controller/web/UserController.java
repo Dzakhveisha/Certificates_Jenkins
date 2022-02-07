@@ -3,7 +3,6 @@ package com.epam.esm.controller.web;
 import com.epam.esm.controller.hateoas.Linker;
 import com.epam.esm.dao.model.PageOfEntities;
 import com.epam.esm.service.UserService;
-import com.epam.esm.service.model.dto.OrderDto;
 import com.epam.esm.service.model.dto.UserDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.Min;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/users")
