@@ -72,6 +72,7 @@ public class ServerSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .addFilter(authenticationFilter)
                 .addFilterAfter(jwtCheckerFilter, JwtGeneratorFilter.class)
                 .addFilterBefore(exceptionHandlerFilter, CorsFilter.class);
+        http.cors();
     }
 
     @Bean

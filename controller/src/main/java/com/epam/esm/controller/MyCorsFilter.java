@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class CorsFilter implements Filter {
+public class MyCorsFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
@@ -20,6 +20,7 @@ public class CorsFilter implements Filter {
         ((HttpServletResponse)servletResponse).setHeader("Access-Control-Max-Age", "3600");
         ((HttpServletResponse)servletResponse).setHeader("Access-Control-Allow-Headers", "*");
         ((HttpServletResponse)servletResponse).setHeader("Access-Control-Expose-Headers", "Authorisation");
+        ((HttpServletResponse)servletResponse).setHeader("X-Requested-With","XMLHttpRequest");
         filterChain.doFilter(servletRequest, servletResponse);
     }
 }
